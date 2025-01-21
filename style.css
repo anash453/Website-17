@@ -1,0 +1,432 @@
+
+*{
+  margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+list-style-type: none;
+
+}
+
+body {
+font-family: 'Rubik', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+color: #888;
+line-height: 1.6;
+overflow-x: hidden;
+}
+
+nav{
+/* padding: 0px 30px; */
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+background: #000;
+position: relative;
+height: 83px;
+/* position: fixed;
+width: 100%; */
+}
+
+.logo{
+color: #fff;
+/* padding: 20px 0; */
+text-align: center;
+}
+img {
+width: auto;
+max-width: 100%;
+vertical-align: middle;
+}
+nav ul{
+display: flex;
+gap: 20px;
+align-items: center;
+}
+nav ul li a{
+text-decoration: none;
+color: #fff;
+font-size: 13px;
+font-weight: 500;
+/* padding: 12px 20px; */
+border-radius: 25px;
+/* background-color: #fff; */
+/* border: 1px solid #EBEBEB; */
+}
+
+.menu-icon{
+display: none;
+}
+
+.menu-icon i{
+color: #a5a7ae;
+font-size: 18px;
+border: 1px solid #78829b;
+padding: 5px 11px;
+border-radius: 4px;
+background-color: #d0d1d5;
+}
+nav.fixed {
+position: fixed;
+top: 0;
+width: 100%;
+background-color: #000; 
+z-index: 999;
+transition: all 0.3s ease-in-out;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+@media (max-width:768px) {
+nav ul{
+    position: absolute;
+    top: 90px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background: #F8F8F8;
+    gap: 0;
+    overflow: hidden;
+}
+nav ul li{
+    padding: 0px;
+}
+.menu-icon{
+    display: block;
+}
+#menuList{
+    transition: all 0.5s;
+}
+nav ul li a{
+  text-decoration: none;
+  color: #78829b;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 0 0;
+  border-radius: 25px;
+  background-color: transparent;
+  margin-left: 10px;
+}
+
+nav ul{
+  align-items: normal;
+}
+}
+
+
+
+
+@media(max-width: 991px) {
+nav{
+  background: #000;
+  padding: 0px 40px;
+  justify-content: space-between;
+}
+.nnn{
+  display: none;
+}
+nav ul{
+  gap: 10px;
+}
+.content-top {
+    display: none;
+}
+}
+
+.hightlight-content {
+  min-height: 691px;
+  background: url(images/bg_banner.jpg) no-repeat top center;
+  padding: 73px 0 0;
+  text-align: center;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 995px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1201px) {
+  .container {
+    width: 1170px;
+  }
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.hightlight-content .title-theme-info {
+  font-size: 19px;
+  margin: 72px 0 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.hightlight-content .des-theme-info {
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+.theme-info span.purchase a, .header .navigation li.current a, .header .navigation li a:hover {
+  background-color: #ffaa00;
+  color: #fff;
+}
+.theme-info span.purchase a {
+  text-transform: uppercase;
+  display: inline-block;
+  line-height: 34px;
+  letter-spacing: 2px;
+  padding: 0 20px;
+  color: #fff;
+  transition: .2s;
+  -webkit-transition: .2s;
+  font-weight: 400;
+}
+.hightlight-content .device-info {
+  position: relative;
+  bottom: -44px;
+}
+.description-device {
+  text-align: center;
+  padding: 44px 0px 61px;
+}
+.description-device .txt-des {
+  margin-bottom: 40px;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.description-device .button-des {
+  margin: 0;
+}
+.description-device .button-des li {
+  display: inline-block;
+  margin: 0 4px;
+}
+.description-device .button-des li a {
+  display: inline-block;
+  width: 165px;
+  height: 52px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 52px;
+  background-color: #ffaa00;
+  transition: .2s;
+  color: #fff;
+  -webkit-transition: .2s;
+}
+.row3{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+.feature-info .title-feature {
+  text-align: center;
+}
+.key-feature .feature-info .title-feature h2 {
+  font-size: 42px;
+  margin-top: -4px;
+  line-height: 98%;
+}
+.key-feature .feature-info .title-feature .des-feature {
+  font-size: 12px;
+}
+.title-second {
+  border-bottom: 2px solid #ffaa00;
+  margin-bottom: 54px;
+  text-align: center;
+}
+.title-second span {
+  background: #f2f2f2 none repeat scroll 0 0;
+  bottom: -12px;
+  color: #000;
+  display: inline-block;
+  font-size: 20px;
+  padding: 0 10px;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.key-feature .list-feature .item-feature {
+  box-shadow: 0 1px 2px #ccc;
+  -webkit-box-shadow: 0 1px 2px #ccc;
+  padding: 25px 10px 40px;
+  background-color: #fff;
+  margin-bottom: 35px;
+  position: relative;
+  min-height: 162px;
+}
+.key-feature .list-feature .item-feature .icon-feature {
+  width: 92px;
+  text-align: center;
+  float: left;
+  padding-top: 15px;
+}
+.key-feature .list-feature .item-feature .info-feature {
+  margin-left: 100px;
+}
+.key-feature .list-feature .item-feature .info-feature h2 {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+@media (max-width: 992px) {
+  .row3{
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+.feature-wrapper.demo-layout {
+  padding-top: 61px;
+}
+.feature-wrapper {
+  padding: 45px 0 0;
+  position: relative;
+}
+.feature-wrapper.demo-layout .feature-info {
+  position: relative;
+  z-index: 1;
+}
+.feature-info .title-feature {
+  text-align: center;
+}
+.demo-layout .feature-info .title-feature h2 {
+  margin-bottom: 38px;
+}
+.feature-info .title-feature h2 {
+  font-size: 28px;
+  color: #000;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.demo-layout .feature-info .title-feature h2 span {
+  font-size: 14px;
+  font-weight: normal;
+}
+.rows{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+.grid-demo:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.grid-demo {
+  padding: 30px 0;
+  border-bottom: 1px solid #ededed;
+  position: relative;
+  margin: 0 10px;
+}
+.demo-wrapper .image-demo a {
+  display: block;
+  height: 100%;
+}
+.demo-wrapper .info-demo {
+  text-align: center;
+  display: inline-block;
+  margin-top: 30px;
+  width: 100%;
+}
+.demo-wrapper .info-demo h2 {
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.demo-wrapper .info-demo .demo-item-btn {
+  display: inline-block;
+  height: 43px;
+  line-height: 39px;
+  border: 3px solid #d7d7d7;
+  padding: 0 20px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #000;
+  text-transform: uppercase;
+  margin: 10px 0 50px;
+  transition: .2s;
+  -webkit-transition: .2s;
+  letter-spacing: 2px;
+}
+.demo-wrapper .info-demo .demo-item-btn:hover{
+  background-color: #F6A873;
+  border: 3px solid #F6A873;
+  color: #fff;
+}
+
+.image-demo {
+  position: relative; /* Required for the overlay */
+  display: inline-block;
+}
+
+.image-demo img {
+  display: block; /* Removes any gaps below the image */
+}
+
+.image-demo::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0); /* Start with a fully transparent overlay */
+  transition: background-color 0.3s ease; /* Smooth transition effect */
+  z-index: 1; /* Place the overlay above the image */
+}
+
+.image-demo:hover::after {
+  background-color: rgba(255, 255, 255, 0.5); /* Light white overlay on hover */
+}
+
+@media (max-width: 992px) {
+  .rows{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+@media (max-width: 768px) {
+  .rows{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .grid-demo{
+    text-align: center;
+  }
+}
+.footer-container {
+  background: url(images/bg-footer.jpg) no-repeat top center;
+  color: #fff;
+  text-align: center;
+  padding: 90px 0 105px;
+}
+.footer-container .footer h2 {
+  font-size: 38px;
+  margin-bottom: 29px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.footer-container .footer .btn-footer {
+  border: 1px solid #FFF;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 9px 30px;
+  color: #FFF;
+  transition: all 0.2s ease 0s;
+}
+.footer-container .footer .btn-footer:hover{
+  background-color: #ffaa00;
+  border: 1px solid #ffaa00;
+
+}
