@@ -1,3 +1,4 @@
+// https://preview.themeforest.net/item/etrostore-multipurpose-responsive-magento-2-1-theme/full_screen_preview/14783535?_ga=2.157838010.1067615878.1737182149-993370187.1728848196
 let menuList = document.getElementById("menuList")
         menuList.style.maxHeight = "0px";
 
